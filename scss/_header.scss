@@ -55,6 +55,9 @@
       gap: 1.25rem;
     }
   }
+  @media (max-width:922px){
+    padding: 20px;
+  }
 }
 .menu {
   // .menu__burger

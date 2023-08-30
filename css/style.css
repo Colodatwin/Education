@@ -258,6 +258,11 @@ body {
     gap: 1.25rem;
   }
 }
+@media (max-width: 922px) {
+  .header {
+    padding: 20px;
+  }
+}
 
 .menu__burger {
   display: none;
