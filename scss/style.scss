@@ -18,7 +18,7 @@ body {
 .main {
   // .main__start
   &__start {
-    padding: 320px 0 17.6875rem;
+    padding: 20rem 0 17.6875rem;
   }
   // .main__about
   &__about {
@@ -44,7 +44,7 @@ body {
   &__testimonial {
     padding: 4.5rem 0;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 59.375rem) {
     &__start {
       padding: 12.5rem 0 17.6875rem;
     }
@@ -65,7 +65,7 @@ body {
       padding: 2.8125rem 0;
     }
   }
-  @media (max-width: 700px) {
+  @media (max-width: 43.75rem) {
     &__service,
     &__event,
     &__students,
@@ -111,7 +111,7 @@ body {
   font-size: 3rem;
   font-weight: 700;
   line-height: normal;
-  @media (max-width: 600px) {
+  @media (max-width: 37.5rem) {
     font-size: 2.375rem;
   }
 }

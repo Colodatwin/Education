@@ -9,14 +9,14 @@
   }
   // .service__subtitle
   &__subtitle {
-    max-width: 423px;
+    max-width: 26.4375rem;
     margin: 0 auto 3rem;
   }
   // .service__list
   &__list {
     display: grid;
     gap: 3.3125rem;
-    grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
   }
   // .service__item
   &__item {
@@ -37,7 +37,7 @@
   &__item-text {
     font-size: 0.875rem;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5rem) {
     &__subtitle {
       margin-bottom: 1.875rem;
     }

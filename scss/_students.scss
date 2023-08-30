@@ -13,7 +13,7 @@
     max-width: 30.6875rem;
     margin: 0 auto 0.9375rem;
     text-align: center;
-    @media (min-width: 650px) {
+    @media (min-width: 40.625rem) {
       margin-bottom: 2.625rem;
     }
   }
@@ -100,15 +100,15 @@
 }
 .swiper {
   overflow: hidden;
-  max-width: 1004px;
+  max-width: 62.75rem;
   padding: 15px 20px;
   box-sizing: content-box;
   // .swiper__slide-text
   &__slide-text {
     flex-grow: 1;
     margin-bottom: 1.25rem;
-    @media (min-width: 650px) {
-      max-width: 268px;
+    @media (min-width: 40.625rem) {
+      max-width: 16.75rem;
     }
   }
   // .swiper__slide-student
