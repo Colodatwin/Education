@@ -354,9 +354,13 @@ body {
     top: auto;
     bottom: 0;
   }
+}
+@media (max-width: 920px) and (min-width: 992px) {
   .menu__burger:hover span, .menu__burger:hover::before, .menu__burger:hover::after {
     background-color: #086cf9;
   }
+}
+@media (max-width: 920px) {
   .menu__burger.active span {
     -webkit-transform: scale(0);
             transform: scale(0);

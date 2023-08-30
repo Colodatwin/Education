@@ -140,11 +140,13 @@
       top: auto;
       bottom: 0;
     }
-    &:hover {
-      span,
-      &::before,
-      &::after {
-        background-color: #086cf9;
+    @media (min-width:992px){
+      &:hover {
+        span,
+        &::before,
+        &::after {
+          background-color: #086cf9;
+        }
       }
     }
   }
