@@ -110,7 +110,7 @@ body {
 }
 
 .main__start {
-  padding: 20rem 0 17.6875rem;
+  padding: 320px 0 17.6875rem;
 }
 .main__about {
   padding: 1.9375rem 0px 8rem;
@@ -128,6 +128,9 @@ body {
   padding: 4.5rem 0;
 }
 @media (max-width: 950px) {
+  .main__start {
+    padding: 12.5rem 0 17.6875rem;
+  }
   .main__service, .main__event, .main__students, .main__subscribe {
     padding-bottom: 4.6875rem;
   }
