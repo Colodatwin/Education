@@ -1,0 +1,151 @@
+.students {
+  // .students__container
+  &__container {
+    overflow: hidden;
+  }
+  // .students__title
+  &__title {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+  // .students__subtitle
+  &__subtitle {
+    max-width: 30.6875rem;
+    margin: 0 auto 0.9375rem;
+    text-align: center;
+    @media (min-width: 650px) {
+      margin-bottom: 2.625rem;
+    }
+  }
+  &__swiper-wrapper {
+    position: relative;
+  }
+  // .students__swiper
+  &__swiper {
+  }
+  // .students__swiper-prev
+  &__swiper-prev {
+    z-index: 50;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+  }
+  &__prev-arrow {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    svg:nth-child(1) {
+      color: #086cf9;
+      fill: #086cf9;
+    }
+    svg:nth-child(2) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: #fff;
+    }
+  }
+  &__swiper-prev.swiper-button-disabled {
+    cursor: auto;
+    pointer-events: none;
+    svg:nth-child(1) {
+      color: #d5d4d4;
+      fill: none;
+    }
+    svg:nth-child(2) {
+      color: #d5d4d4;
+    }
+  }
+  // .students__swiper-next
+  &__swiper-next {
+    z-index: 50;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+  }
+  &__next-arrow {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    svg:nth-child(1) {
+      color: #086cf9;
+      fill: #086cf9;
+    }
+    svg:nth-child(2) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: #fff;
+    }
+  }
+  &__swiper-next.swiper-button-disabled {
+    cursor: auto;
+    pointer-events: none;
+    svg:nth-child(1) {
+      color: #d5d4d4;
+      fill: none;
+    }
+    svg:nth-child(2) {
+      color: #d5d4d4;
+    }
+  }
+}
+.swiper {
+  overflow: hidden;
+  max-width: 1004px;
+  padding: 15px 20px;
+  box-sizing: content-box;
+  // .swiper__slide-text
+  &__slide-text {
+    flex-grow: 1;
+    margin-bottom: 1.25rem;
+    @media (min-width: 650px) {
+      max-width: 268px;
+    }
+  }
+  // .swiper__slide-student
+  &__slide-student {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  // .swiper__slide-img
+  &__slide-img {
+  }
+  // .swiper__student-info
+  &__student-info {
+    flex-grow: 1;
+  }
+  // .swiper__student-name
+  &__student-name {
+    color: #222;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+  }
+  // .swiper__student-major
+  &__student-major {
+    font-size: 0.875rem;
+  }
+}
+.swiper-wrapper {
+}
+.students__swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-self: center;
+  padding: 1.875rem 0.9375rem;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+}

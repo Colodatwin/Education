@@ -1,0 +1,129 @@
+.mentor {
+  // .mentor__container
+  &__container {
+  }
+  // .mentor__title
+  &__title {
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+  // .mentor__subtitle
+  &__subtitle {
+    color: #444;
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 551px;
+    margin: 0 auto 3rem;
+  }
+  // .mentor__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+    gap: 1.5rem;
+  }
+  // .mentor__item
+  &__item {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.375rem;
+    background-color: #fff;
+    box-shadow: 0px 11px 55px 0px rgba(0, 0, 0, 0.08);
+  }
+  // .mentor__img
+  &__img {
+    position: relative;
+    padding-bottom: 92.5%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @media (min-width: 992px) {
+        transition: transform 0.2s ease-in;
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+    }
+  &__content {
+    padding: 1rem 2rem 2.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+  // .mentor__name
+  &__name {
+    color: #222;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: normal;
+    transition: color 0.3s ease;
+    &:hover{
+      color: #086cf9;
+    }
+  }
+  // .mentor__major
+  &__major {
+    margin-bottom: 1.5rem;
+    flex: 1 1 auto;
+    transition: color 0.2s ease;
+    &:hover{
+      color: #086cf9;
+    }
+  }
+  // .mentor__stats
+  &__stats {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  // .mentor__users
+  &__users {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    // padding-left: 1.5rem;
+    position: relative;
+    &::before {
+      content: "";
+      // position: absolute;
+      // top: 50%;
+      // transform: translateY(-50%);
+      // left: 0;
+      background: url(../img/mentor/user.png) left no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  // .mentor__rate
+  &__rate {
+    svg{
+      color: #086cf9;
+    }
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    gap: 0.375rem;
+    transition: color 0.3s ease;
+    &:hover{
+      color: #086cf9;
+    }
+  }
+  // .mentor__courses
+  &__courses {
+    justify-self: end;
+    font-size: 14px;
+    transition: color 0.2s ease;
+    &:hover{
+      color: #086cf9;
+    }
+  }
+}

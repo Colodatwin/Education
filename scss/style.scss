@@ -1,0 +1,128 @@
+// ------------- !IMPORT ШРИФТОВ! ----------
+@import "fonts";
+// ------------- !ОБНУЛЕНИЕ! ----------
+@import "reset";
+// -----------------------
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #555;
+  line-height: 155%;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+.main {
+  // .main__start
+  &__start {
+    padding: 20rem 0 17.6875rem;
+  }
+  // .main__about
+  &__about {
+    padding: 1.9375rem 0px 8rem;
+  }
+  // .main__service
+  &__service,
+  &__event,
+  &__students,
+  &__subscribe {
+    padding-bottom: 8rem;
+  }
+  // .main__courses
+  &__courses {
+    padding: 3.75rem 0;
+  }
+  // .main__mentor
+  &__mentor,
+  &__blog {
+    padding: 8rem 0;
+  }
+  // .main__testimonial
+  &__testimonial {
+    padding: 4.5rem 0;
+  }
+  @media (max-width: 950px) {
+    &__service,
+    &__event,
+    &__students,
+    &__subscribe {
+      padding-bottom: 4.6875rem;
+    }
+    &__about {
+      padding-bottom: 5.625rem;
+    }
+    &__mentor,
+    &__blog {
+      padding: 4.6875rem 0;
+    }
+    &__testimonial {
+      padding: 2.8125rem 0;
+    }
+  }
+  @media (max-width: 700px) {
+    &__service,
+    &__event,
+    &__students,
+    &__subscribe {
+      padding-bottom: 3.125rem;
+    }
+    &__about {
+      padding-bottom: 4.375rem;
+    }
+    &__mentor,
+    &__blog {
+      padding: 4.375rem 0;
+    }
+    &__testimonial {
+      padding: 1.875rem 0;
+    }
+  }
+}
+// --------------------------
+[class*="__container"] {
+  max-width: 73.875rem;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button {
+  display: block;
+  border-radius: 0.25rem;
+  background: #086cf9;
+  line-height: 150%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 3px 0 rgb(49, 49, 180);
+  position: relative;
+  top: 0;
+  transition: all 0.3s;
+  &:active {
+    box-shadow: 0 1px 0 rgb(49, 49, 180);
+    top: 2px;
+  }
+}
+.title {
+  color: #222;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: normal;
+  @media (max-width: 600px) {
+    font-size: 2.375rem;
+  }
+}
+// -------------------------
+// ------------------------
+@import "_header.scss";
+@import "_start.scss";
+@import "_about.scss";
+@import "_service.scss";
+@import "_courses.scss";
+@import "_mentor.scss";
+@import "_event.scss";
+@import "_testimonial.scss";
+@import "_blog.scss";
+@import "_students.scss";
+@import "_subscribe.scss";
+@import "_footer.scss";
